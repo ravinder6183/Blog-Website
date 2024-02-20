@@ -5,10 +5,10 @@
 
 
 <% newPosts.forEach(element => { %>
-   <h1><%= element.newTitle %></h1>
+   <h1><%= element.title %></h1>
    <p>
-    <%= element.newContent.substring(0,100) + "..." %>
-    <a href="/posts/<%= element.newTitle %>">Read More</a>
+    <%= element.content.substring(0,100) + "..." %>
+    <a href="/posts/<%= element._id %>">Read More</a>
     </p>
 <%});%>
 
